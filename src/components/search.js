@@ -11,13 +11,11 @@ const Search = () => {
 
   const handleChange = (e) => {
     setCity(e.target.value)
-    e.preventDefault();
-    console.log(city)
+    e.preventDefault()
   }
 
   const handleClick = () => {
     localStorage.setItem('city', `${city}`)
-    console.log(localStorage.getItem('city'))
   }
 
   return (
@@ -25,8 +23,8 @@ const Search = () => {
       <Row>
         <Col >
           <Form inline className="justify-content-center">
-            <FormControl type="text" placeholder="Ingresa tu ciudad capital" className="mr-sm-2 mb-2" onChange={handleChange}/>
-            <Button variant="outline-info" className="mb-2" href="/" onClick={handleClick}>Buscar</Button>
+            <FormControl type="text" placeholder="enter your capital city" className="mr-sm-2 mb-2" onChange={handleChange}/>
+            <Button variant="outline-info" className="mb-2" href="/" onClick={handleClick}>Search</Button>
           </Form>
         </Col>
       </Row>

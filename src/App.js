@@ -7,9 +7,9 @@ import Principal from './pages/principal'
 function App () {
   return (
     <div>
-    <Switch>
-     <Route exact path='/' component={Principal} />
-    </Switch>
+      <Switch>
+        <Route exact path='/' component={Principal} />
+      </Switch>
     </div>
   )
 }
